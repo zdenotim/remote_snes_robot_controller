@@ -10,7 +10,16 @@ Here guide how enable remote controll of your robot:
 
 2. Run sudo pigpiod daemon on Pi.
 
+3. Connect your gamepad
+   First plug the joystick into Raspberry Pi, this will be into a USB port from either the joysticks cable, or the wireless receiver.
+You will now need to run the following to ensure the joystick drivers are installed:
+sudo apt-get -y install joystick
+Then you will want to run jstest as follows:
+jstest /dev/input/js0
+
 3. Install python gpiozero, pygame libraries.
+
+4. Download and update python script remote_snes_robot_controller.py with your remote Pi address.
 
    
 
